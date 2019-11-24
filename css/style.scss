@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	color: #666666;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	line-height: 1.6;
+	outline:none;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;	
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;	
+}
+
+$rate-color: #ebdb2c;
+$orange-color:#ff5500;
+$orange-color2: #e74c3c;
+$strawberry:#d73851;
+$black33:#333333;
+$border3e:#eee;
+$brightblue0:#2b375c;
+$brightblue1:#343c54;
+$brightblue2:#4a5678;
+$brightblue3:#6b738d;
+@mixin forproduct() {
+	.item {
+		
+		border:1px solid #eee;
+		text-align: center;
+		margin:5px;
+		margin-bottom:20px;
+		box-sizing: border-box;
+		&:hover{
+			-webkit-box-shadow: 0px 0px 10px 5px #000000; 
+			box-shadow: 0px 0px 10px 5px #000000;
+			transition: 1s;
+
+		}
+		.info-product{
+			padding:10px 20px 30px 20px;
+			overflow: hidden;
+			.name-product{
+				color: $black33;
+				white-space: nowrap;
+				overflow: hidden;
+				font-size:15px;
+				font-weight: bold;
+
+
+			}
+			.review-product{
+				display: flex;
+				justify-content: center;
+				i{
+					color:$rate-color;
+					padding:2px;		  		
+				}
+			}
+			.price-product{
+				color: $orange-color2;
+				font-size: 133%;
+			}
+			.addcart-product{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				.link-wishlist,.link-compare{
+					color:#666;
+					padding:10px 10px;
+					border: 1px solid #ddd;
+
+					&:hover{
+						color:$orange-color;
+					}
+				}
+				.btn-cart{
+					border: none;
+					padding:10px 15px;
+					color: #666;
+					margin:0 5px;
+					&:hover{
+						color:$orange-color;
+					}
+				}
+			}
+		}
+	}
+}
+@mixin switchlayout() {
+	background-color: #fff;
+	border: 1px solid #eee;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	display: none;
+	float: left;
+	left: 0;
+	min-width: 130px;
+	padding: 5px 10px;	
+	position: absolute;
+	top: 100%;
+	z-index: 130;
+	a{
+		border:none;
+	}
+	li{
+		&:hover{
+			a{
+				color:$orange-color;
+			}
+		}
+	}
+}
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/mid-homepage";
+@import "layout/mid-product";
+@import "layout/other";
+
+@import "responsive/responsive";

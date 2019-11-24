@@ -1,0 +1,152 @@
+//back-to-top
+.back-to-top{
+	button{
+		z-index: 100;
+		position: fixed;
+		bottom:40px;
+		right:40px;
+		font-size:22px;
+		width: 50px;
+		height: 50px;
+		background:$orange-color;
+		color:#fff;
+		border-radius: 50%;
+		border:none;
+		text-decoration: none;
+		outline-style: none;
+	}	
+}
+
+
+//menu be hided
+.menutrai{
+	position: fixed;
+	width: 300px;
+	height:100%;
+	z-index: 2002;
+	background: #bdc3c7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	transform: translateX(-100%);
+	transition: 2s;
+	ul{
+		margin-top:20px;
+	}
+	li{
+		background: #bdc3c7;  /* fallback for old browsers */
+		background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		border-bottom:1px solid #eee;
+		a{
+			color:rgba(255,255,255,0.5);
+			font-size:16px;
+			font-weight:bold;
+			text-decoration: none;
+			&:hover{
+				color:rgba(255,255,255,0.9);
+			}
+		}
+	}
+}
+.showmenu{
+	transform: translate(0px);
+}
+.den{
+	position: fixed;
+	width:100%;
+	height: 100%;
+	background:rgba(0,0,0,0.3);
+	top:0;
+	left:0;
+	cursor:pointer;
+	z-index: 2001;
+	opacity: 0;
+	visibility: hidden; 
+}
+.len{
+	opacity:1;
+	visibility: visible;
+}
+//
+.container {
+	max-width: 1170px ;
+}
+
+
+
+
+
+//css for pagination
+.list-wrapper {
+	padding: 15px;
+	overflow: hidden;
+}
+
+.list-item {
+	border: 1px solid #EEE;
+	background: #FFF;
+	margin-bottom: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 0px #EEE;
+}
+
+.list-item h4 {
+	color: #FF7182;
+	font-size: 18px;
+	margin: 0 0 5px;	
+}
+
+.list-item p {
+	margin: 0;
+}
+
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+	color: #666;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: 1px solid #eee;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 0px #eee;
+}
+
+.simple-pagination .current {
+	color: #FFF;
+	background-color: $orange-color2;
+	border-color: $orange-color2;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+	background: $orange-color;
+}
+
+
+//other
+.showpro{
+	display: block;
+}
+.hidepro{
+	display: none;
+}
+.show{
+	display: block;
+}
+///
+
+
+
